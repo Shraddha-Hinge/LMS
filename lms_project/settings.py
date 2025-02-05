@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'live_session_integration',
     'corsheaders',
     'course_management',
+    'student_management',
 ]
 
 MIDDLEWARE = [
