@@ -7,7 +7,7 @@ class Student(models.Model):
     email = models.EmailField(unique=True)
     phone = models.CharField(max_length=15, null=True, blank=True)
     address = models.TextField(null=True, blank=True)
-    dob = models.DateField()  # Date of birth
+    dob = models.DateField()  
     created_at = models.DateTimeField(auto_now_add=True)
 
     def __str__(self):
