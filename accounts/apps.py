@@ -5,4 +5,7 @@ class AccountsConfig(AppConfig):
     name = 'accounts'
 
     def ready(self):
-        import accounts.signals
+        try:
+            import accounts.signals  
+        except ModuleNotFoundError:
+            pass  
